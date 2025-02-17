@@ -1,0 +1,14 @@
+/* para.css */
+.main {
+    text-align: center;
+}
+
+.heading {
+    font-size: 60px;
+    color: green;
+}
+
+#para {
+    font-size: 25px;
+    color: skyblue;
+};
