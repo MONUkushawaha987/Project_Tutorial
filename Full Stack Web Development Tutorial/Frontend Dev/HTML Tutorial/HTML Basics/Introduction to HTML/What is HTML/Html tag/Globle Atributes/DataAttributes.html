@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function showDetails(movie) {
+                let directorName =
+                    movie.getAttribute(
+                        "data-director-name"
+                    );
+                let releaseYear =
+                    movie.getAttribute(
+                        "data-released-year"
+                    );
+                alert(`${movie.textContent} 
+            is released at ${releaseYear} 
+            and directed by ${directorName}.`);
+            }
+        </script>
+    </head>
+ 
+    <body>
+        <h1>Movies</h1>
+ 
+        <ul>
+            <li
+                onclick="showDetails(this)"
+                data-director-name="Christopher Nolan"
+                data-released-year="2008"
+            >
+                The Dark Knight
+            </li>
+ 
+            <li
+                onclick="showDetails(this)"
+                data-director-name="Christopher Nolan"
+                data-released-year="2010"
+            >
+                Inception
+            </li>
+ 
+            <li
+                onclick="showDetails(this)"
+                data-director-name="James Cameron"
+                data-released-year="2009"
+            >
+                Avatar
+            </li>
+        </ul>
+    </body>
+</html>
